@@ -54,9 +54,10 @@
     }
 
     .logo-wrap img {
-      width: 180px;
+      width: clamp(240px, 50vw, 320px); /* Increased size */
       height: auto;
       margin-bottom: 2rem;
+      border-radius: 24px; /* Softens the square edges of the jpg */
       filter: drop-shadow(0 0 30px rgba(224, 32, 32, 0.2));
     }
 
@@ -84,7 +85,7 @@
     }
 
     h1 {
-      font-size: clamp(2rem, 6vw, 3.5rem);
+      font-size: clamp(2.2rem, 7vw, 3.8rem); /* Slightly larger weight */
       font-weight: 800;
       line-height: 1.1;
       margin-bottom: 1.5rem;
@@ -135,7 +136,7 @@
 
   <main class="container">
     <div class="logo-wrap">
-      <img src="logo.png" alt="Fetch Logo">
+      <img src="logo.jpg" alt="Fetch Logo">
     </div>
 
     <div class="badge"><span></span> Coming Soon</div>
