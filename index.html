@@ -3,52 +3,32 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fetch by Pinhead Systems | Robotic Free-Fall Pinsetter</title>
-<meta name="description" content="Fetch by Pinhead Systems. The world's first autonomous robotic bowling pin-setting system. No strings attached, literally.">
-
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<title>Fetch by Pinhead Systems</title>
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
-
 <style>
-html, body, main, div, h1, p, img, a, span, footer {
-box-sizing: border-box;
-margin: 0;
-padding: 0;
-}
-
 body {
-background-color: #000000;
-color: #ffffff;
+background-color: #000;
+color: #fff;
 font-family: 'Inter', sans-serif;
 display: flex;
 align-items: center;
 justify-content: center;
 min-height: 100vh;
 margin: 0;
+overflow: hidden;
 }
-
 .container {
 text-align: center;
-padding: 40px 20px;
-max-width: 700px;
+padding: 20px;
 width: 100%;
+max-width: 700px;
 }
-
-.logo-container {
-margin-bottom: 0;
-line-height: 0;
-min-height: 50px;
-}
-
 .logo-container img {
 display: block;
 margin: 0 auto;
 width: clamp(280px, 80vw, 500px);
 height: auto;
-border-radius: 20px;
 }
-
 .badge {
 display: inline-flex;
 align-items: center;
@@ -56,54 +36,64 @@ font-size: 11px;
 font-weight: 800;
 letter-spacing: 2px;
 text-transform: uppercase;
-border: 1px solid rgba(255, 191, 0, 0.3);
+border: 1px solid rgba(255,191,0,0.3);
 padding: 8px 16px;
 border-radius: 4px;
-margin-top: 20px;
-margin-bottom: 25px;
-color: #ffffff;
+margin: 20px 0 25px 0;
 }
-
 .badge span {
 width: 8px;
 height: 8px;
 background: #ffbf00;
 border-radius: 2px;
 margin-right: 10px;
-animation: pulse-amber 2s infinite ease-in-out;
+animation: pulse 2s infinite ease-in-out;
 }
-
-@keyframes pulse-amber {
-0% { opacity: 0.4; box-shadow: 0 0 0px #ffbf00; }
+@keyframes pulse {
+0%, 100% { opacity: 0.4; box-shadow: 0 0 0 #ffbf00; }
 50% { opacity: 1; box-shadow: 0 0 10px #ffbf00; }
-100% { opacity: 0.4; box-shadow: 0 0 0px #ffbf00; }
 }
-
 h1 {
 font-size: clamp(2.2rem, 9vw, 3.8rem);
 font-weight: 900;
 line-height: 1;
 margin-bottom: 20px;
-letter-spacing: -0.04em;
 text-transform: uppercase;
 }
-
 .pitch {
 font-size: 1.2rem;
 color: #94a3b8;
-line-height: 1.6;
 margin-bottom: 40px;
 }
-
 .pitch strong {
-color: #ffffff;
+color: #fff;
 display: block;
 margin-bottom: 8px;
 }
-
 .tagline-sub {
-font-style: normal;
 font-weight: 700;
 display: block;
 margin-top: 12px;
-color: #ff1f1
+color: #ff1f1f;
+}
+.tagline-sub i {
+font-style: italic;
+}
+.contact a {
+color: #fff;
+text-decoration: none;
+font-weight: 700;
+border: 2px solid #fff;
+padding: 16px 32px;
+border-radius: 4px;
+display: inline-block;
+}
+footer {
+margin-top: 80px;
+font-size: 10px;
+color: rgba(255,255,255,0.2);
+text-transform: uppercase;
+letter-spacing: 2px;
+}
+</style>
+</head>
