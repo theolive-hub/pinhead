@@ -4,96 +4,32 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fetch by Pinhead Systems</title>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@700;900&display=swap" rel="stylesheet">
 <style>
-body {
-background-color: #000;
-color: #fff;
-font-family: 'Inter', sans-serif;
-display: flex;
-align-items: center;
-justify-content: center;
-min-height: 100vh;
-margin: 0;
-overflow: hidden;
-}
-.container {
-text-align: center;
-padding: 20px;
-width: 100%;
-max-width: 700px;
-}
-.logo-container img {
-display: block;
-margin: 0 auto;
-width: clamp(280px, 80vw, 500px);
-height: auto;
-}
-.badge {
-display: inline-flex;
-align-items: center;
-font-size: 11px;
-font-weight: 800;
-letter-spacing: 2px;
-text-transform: uppercase;
-border: 1px solid rgba(255,191,0,0.3);
-padding: 8px 16px;
-border-radius: 4px;
-margin: 20px 0 25px 0;
-}
-.badge span {
-width: 8px;
-height: 8px;
-background: #ffbf00;
-border-radius: 2px;
-margin-right: 10px;
-animation: pulse 2s infinite ease-in-out;
-}
-@keyframes pulse {
-0%, 100% { opacity: 0.4; box-shadow: 0 0 0 #ffbf00; }
-50% { opacity: 1; box-shadow: 0 0 10px #ffbf00; }
-}
-h1 {
-font-size: clamp(2.2rem, 9vw, 3.8rem);
-font-weight: 900;
-line-height: 1;
-margin-bottom: 20px;
-text-transform: uppercase;
-}
-.pitch {
-font-size: 1.2rem;
-color: #94a3b8;
-margin-bottom: 40px;
-}
-.pitch strong {
-color: #fff;
-display: block;
-margin-bottom: 8px;
-}
-.tagline-sub {
-font-weight: 700;
-display: block;
-margin-top: 12px;
-color: #ff1f1f;
-}
-.tagline-sub i {
-font-style: italic;
-}
-.contact a {
-color: #fff;
-text-decoration: none;
-font-weight: 700;
-border: 2px solid #fff;
-padding: 16px 32px;
-border-radius: 4px;
-display: inline-block;
-}
-footer {
-margin-top: 80px;
-font-size: 10px;
-color: rgba(255,255,255,0.2);
-text-transform: uppercase;
-letter-spacing: 2px;
-}
+body { background: #000; color: #fff; font-family: 'Inter', sans-serif; margin: 0; display: flex; align-items: center; justify-content: center; min-height: 100vh; text-align: center; }
+.container { padding: 20px; width: 100%; max-width: 600px; }
+img { width: clamp(280px, 80vw, 500px); height: auto; display: block; margin: 0 auto; }
+.badge { display: inline-flex; align-items: center; font-size: 11px; font-weight: 700; letter-spacing: 2px; text-transform: uppercase; border: 1px solid rgba(255,191,0,0.3); padding: 8px 16px; border-radius: 4px; margin: 20px 0; }
+.dot { width: 8px; height: 8px; background: #ffbf00; border-radius: 2px; margin-right: 10px; animation: p 2s infinite; }
+@keyframes p { 0%, 100% { opacity: 0.3; box-shadow: 0 0 0 #ffbf00; } 50% { opacity: 1; box-shadow: 0 0 10px #ffbf00; } }
+h1 { font-size: clamp(2rem, 8vw, 3.5rem); font-weight: 900; line-height: 1; margin: 0 0 20px; text-transform: uppercase; }
+.pitch { color: #94a3b8; font-size: 1.1rem; margin-bottom: 40px; line-height: 1.5; }
+.red { color: #ff1f1f; font-weight: 700; display: block; margin-top: 10px; }
+.btn { color: #fff; text-decoration: none; font-weight: 700; border: 2px solid #fff; padding: 14px 28px; border-radius: 4px; display: inline-block; }
+footer { margin-top: 60px; font-size: 10px; color: #444; letter-spacing: 2px; }
 </style>
 </head>
+<body>
+<div class="container">
+<img src="logo.png" alt="Fetch">
+<div class="badge"><div class="dot"></div> System coming online</div>
+<h1>The Future of the <br>Pin Deck</h1>
+<p class="pitch">
+<strong>Autonomous robotic bowling pin-setting system.</strong>
+<span class="red">No strings attached, <i>literally.</i></span>
+</p>
+<a href="mailto:info@pinhead.systems" class="btn">Inquire: info@pinhead.systems</a>
+<footer>&copy; 2026 PINHEAD SYSTEMS // PATENT PENDING</footer>
+</div>
+</body>
+</html>
