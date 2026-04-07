@@ -1,58 +1,55 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8" />
-<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Fetch by Pinhead Systems: The Future of the Pin Deck</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Fetch by Pinhead Systems</title>
 <style>
 :root {
---red: #ff1f1f;
---blue: #0070f3;
---white: #ffffff;
---dim: #94a3b8;
---bg: #000000;
+--red: rgb(255, 31, 31);
+--white: rgb(255, 255, 255);
+--dim: rgb(148, 163, 184);
+--bg: rgb(0, 0, 0);
 }
 
-/* Reset specific elements to avoid asterisk usage */
-html, body, main, div, img, h1, p, span, a, footer {
+html, body, main, div, h1, p, img, a, span, footer {
 box-sizing: border-box;
 margin: 0;
 padding: 0;
 }
 
-body {
+html, body {
+height: 100%;
 background-color: var(--bg);
+}
+
+body {
 color: var(--white);
-font-family: 'Inter', -apple-system, system-ui, sans-serif;
+font-family: sans-serif;
 display: flex;
 align-items: center;
 justify-content: center;
-min-height: 100vh;
-margin: 0;
 }
 
 .container {
 text-align: center;
-padding: 40px 20px;
-max-width: 700px;
+padding: 20px;
+max-width: 600px;
 width: 100%;
 }
 
-/* Logo Section - Removed margin and baseline gap */
 .logo-container {
 margin-bottom: 0;
-line-height: 0;
 }
 
 .logo-container img {
-width: clamp(360px, 70vw, 560px);
-height: auto;
-border-radius: 20px;
 display: block;
 margin: 0 auto;
+width: clamp(280px, 80vw, 500px);
+height: auto;
+border-radius: 20px;
 }
 
-/* Status Badge - Re-added margin here to control gap precisely */
 .badge {
 display: inline-flex;
 align-items: center;
@@ -60,4 +57,71 @@ font-size: 11px;
 font-weight: 800;
 letter-spacing: 2px;
 text-transform: uppercase;
-border: 1px solid rgba(255,
+border: 1px solid rgba(255, 255, 255, 0.3);
+padding: 8px 16px;
+border-radius: 4px;
+margin-top: 20px;
+margin-bottom: 20px;
+}
+
+.badge span {
+width: 8px;
+height: 8px;
+background: var(--red);
+border-radius: 2px;
+margin-right: 10px;
+}
+
+h1 {
+font-size: clamp(2rem, 10vw, 3.5rem);
+font-weight: 900;
+line-height: 1.1;
+margin-bottom: 20px;
+text-transform: uppercase;
+}
+
+.pitch {
+font-size: 1.1rem;
+color: var(--dim);
+line-height: 1.5;
+margin-bottom: 40px;
+}
+
+.contact a {
+color: var(--white);
+text-decoration: none;
+font-weight: 700;
+border: 2px solid var(--white);
+padding: 15px 30px;
+border-radius: 4px;
+display: inline-block;
+}
+
+footer {
+margin-top: 60px;
+font-size: 10px;
+color: rgba(255, 255, 255, 0.3);
+text-transform: uppercase;
+}
+</style>
+</head>
+<body>
+<main class="container">
+<div class="logo-container">
+<img src="logo.png" alt="Fetch Logo">
+</div>
+<div class="badge"><span></span> System Online</div>
+<h1>The Future of the Pin Deck</h1>
+<p class="pitch">
+<strong>Autonomous robotic bowling pin-setting system.</strong><br>
+Zero downtime. Zero compromise.
+</p>
+<div class="contact">
+<a href="mailto:info@pinhead.systems">Inquire: info@pinhead.systems</a>
+</div>
+<footer>
+&copy; 2026 Pinhead Systems // Patent Pending
+</footer>
+</main>
+</body>
+</html>
