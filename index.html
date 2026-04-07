@@ -3,9 +3,14 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Fetch by Pinhead Systems | Autonomous Robotic Bowling Pinsetter</title>
-<meta name="description" content="Discover Fetch by Pinhead Systems, the future of the pin deck. Our autonomous robotic bowling pin-setting system offers zero downtime and zero compromise.">
-<link rel="canonical" href="https://pinhead.systems/">
+<title>Fetch by Pinhead Systems | Robotic Free-Fall Pinsetter</title>
+<meta name="description" content="Fetch by Pinhead Systems. The world's first autonomous robotic bowling pin-setting system. Zero downtime. Zero compromise. No strings attached.">
+
+<meta property="og:title" content="Fetch by Pinhead Systems">
+<meta property="og:description" content="Autonomous robotic bowling pin-setting. No strings attached.">
+<meta property="og:image" content="https://pinhead.systems/logo.png">
+<meta property="og:url" content="https://pinhead.systems/">
+<meta name="twitter:card" content="summary_large_image">
 
 <script type="application/ld+json">
 {
@@ -16,7 +21,7 @@
     "@type": "Brand",
     "name": "Pinhead Systems"
   },
-  "description": "Autonomous robotic bowling pin-setting system designed for zero downtime."
+  "description": "Autonomous robotic bowling pin-setting system. Zero downtime. Zero compromise. No strings attached."
 }
 </script>
 
@@ -28,7 +33,7 @@
 --bg: #000000;
 }
 
-html, body, main, div, h1, h2, p, img, a, span, footer {
+html, body, main, div, h1, p, img, a, span, footer {
 box-sizing: border-box;
 margin: 0;
 padding: 0;
@@ -37,11 +42,12 @@ padding: 0;
 html, body {
 height: 100%;
 background-color: var(--bg);
+overflow-x: hidden;
 }
 
 body {
 color: var(--white);
-font-family: 'Inter', sans-serif;
+font-family: 'Inter', -apple-system, system-ui, sans-serif;
 display: flex;
 align-items: center;
 justify-content: center;
@@ -49,7 +55,7 @@ justify-content: center;
 
 .container {
 text-align: center;
-padding: 20px;
+padding: 40px 20px;
 max-width: 700px;
 width: 100%;
 }
@@ -77,7 +83,7 @@ text-transform: uppercase;
 border: 1px solid rgba(255, 191, 0, 0.3);
 padding: 8px 16px;
 border-radius: 4px;
-margin-top: 15px;
+margin-top: 20px;
 margin-bottom: 25px;
 color: var(--white);
 }
@@ -98,10 +104,11 @@ animation: pulse-amber 2s infinite ease-in-out;
 }
 
 h1 {
-font-size: clamp(2rem, 10vw, 3.5rem);
+font-size: clamp(2.2rem, 9vw, 3.8rem);
 font-weight: 900;
-line-height: 1.1;
+line-height: 1;
 margin-bottom: 20px;
+letter-spacing: -0.04em;
 text-transform: uppercase;
 }
 
@@ -115,7 +122,14 @@ margin-bottom: 40px;
 .pitch strong {
 color: var(--white);
 display: block;
-margin-bottom: 5px;
+margin-bottom: 8px;
+}
+
+.tagline-sub {
+font-style: italic;
+opacity: 0.8;
+display: block;
+margin-top: 8px;
 }
 
 .contact a {
@@ -123,10 +137,10 @@ color: var(--white);
 text-decoration: none;
 font-weight: 700;
 border: 2px solid var(--white);
-padding: 15px 30px;
+padding: 16px 32px;
 border-radius: 4px;
 display: inline-block;
-transition: background 0.3s;
+transition: all 0.2s ease;
 }
 
 .contact a:hover {
@@ -135,9 +149,9 @@ color: var(--bg);
 }
 
 footer {
-margin-top: 60px;
+margin-top: 80px;
 font-size: 10px;
-color: rgba(255, 255, 255, 0.3);
+color: rgba(255, 255, 255, 0.2);
 text-transform: uppercase;
 letter-spacing: 2px;
 }
@@ -147,21 +161,22 @@ letter-spacing: 2px;
 
 <main class="container">
 <div class="logo-container">
-<img src="logo.png" alt="Fetch by Pinhead Systems - Autonomous Robotic Bowling Pinsetter">
+<img src="logo.png" alt="Fetch by Pinhead Systems">
 </div>
 
 <div class="badge"><span></span> System coming online</div>
 
-<h1>The Future of the Pin Deck</h1>
+<h1>The Future of the <br>Pin Deck</h1>
 
 <p class="pitch">
 <strong>Autonomous robotic bowling pin-setting system.</strong>
 Zero downtime. Zero compromise.
+<span class="tagline-sub">No strings attached.</span>
 </p>
 
-<nav class="contact">
+<div class="contact">
 <a href="mailto:info@pinhead.systems">Inquire: info@pinhead.systems</a>
-</nav>
+</div>
 
 <footer>
 &copy; 2026 Pinhead Systems // Patent Pending
