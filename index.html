@@ -51,7 +51,6 @@ height: auto;
 border-radius: 20px;
 }
 
-/* Badge: White text, amber dot, amber glow */
 .badge {
 display: inline-flex;
 align-items: center;
@@ -64,16 +63,33 @@ padding: 8px 16px;
 border-radius: 4px;
 margin-top: 15px;
 margin-bottom: 25px;
-color: var(--white); /* White text */
+color: var(--white);
 }
 
 .badge span {
 width: 8px;
 height: 8px;
-background: var(--amber); /* Amber dot */
+background: var(--amber);
 border-radius: 2px;
 margin-right: 10px;
-box-shadow: 0 0 8px var(--amber); /* Amber glow */
+/* Applied pulsing animation */
+animation: pulse-amber 2s infinite ease-in-out;
+}
+
+/* Diode pulse animation logic */
+@keyframes pulse-amber {
+0% {
+opacity: 0.4;
+box-shadow: 0 0 0px var(--amber);
+}
+50% {
+opacity: 1;
+box-shadow: 0 0 10px var(--amber);
+}
+100% {
+opacity: 0.4;
+box-shadow: 0 0 0px var(--amber);
+}
 }
 
 h1 {
