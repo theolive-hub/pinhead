@@ -5,6 +5,13 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Fetch by Pinhead Systems</title>
 <style>
+:root {
+--amber: #ffbf00;
+--white: #ffffff;
+--dim: #94a3b8;
+--bg: #000000;
+}
+
 html, body, main, div, h1, p, img, a, span, footer {
 box-sizing: border-box;
 margin: 0;
@@ -13,11 +20,11 @@ padding: 0;
 
 html, body {
 height: 100%;
-background-color: #000000;
+background-color: var(--bg);
 }
 
 body {
-color: #ffffff;
+color: var(--white);
 font-family: sans-serif;
 display: flex;
 align-items: center;
@@ -33,6 +40,7 @@ width: 100%;
 
 .logo-container {
 margin-bottom: 0;
+line-height: 0;
 }
 
 .logo-container img {
@@ -43,6 +51,7 @@ height: auto;
 border-radius: 20px;
 }
 
+/* Updated Badge: Amber theme and tightened spacing */
 .badge {
 display: inline-flex;
 align-items: center;
@@ -50,19 +59,21 @@ font-size: 11px;
 font-weight: 800;
 letter-spacing: 2px;
 text-transform: uppercase;
-border: 1px solid rgba(255, 255, 255, 0.3);
+border: 1px solid rgba(255, 191, 0, 0.3);
 padding: 8px 16px;
 border-radius: 4px;
-margin-top: 20px;
-margin-bottom: 20px;
+margin-top: 15px;
+margin-bottom: 25px;
+color: var(--amber);
 }
 
 .badge span {
 width: 8px;
 height: 8px;
-background: #ff1f1f;
+background: var(--amber);
 border-radius: 2px;
 margin-right: 10px;
+box-shadow: 0 0 8px var(--amber); /* Glow effect */
 }
 
 h1 {
@@ -75,16 +86,16 @@ text-transform: uppercase;
 
 .pitch {
 font-size: 1.1rem;
-color: #94a3b8;
+color: var(--dim);
 line-height: 1.5;
 margin-bottom: 40px;
 }
 
 .contact a {
-color: #ffffff;
+color: var(--white);
 text-decoration: none;
 font-weight: 700;
-border: 2px solid #ffffff;
+border: 2px solid var(--white);
 padding: 15px 30px;
 border-radius: 4px;
 display: inline-block;
@@ -99,22 +110,29 @@ text-transform: uppercase;
 </style>
 </head>
 <body>
+
 <main class="container">
 <div class="logo-container">
 <img src="logo.png" alt="Fetch Logo">
 </div>
-<div class="badge"><span></span> System Online</div>
+
+<div class="badge"><span></span> System coming online</div>
+
 <h1>The Future of the Pin Deck</h1>
+
 <p class="pitch">
 <strong>Autonomous robotic bowling pin-setting system.</strong><br>
 Zero downtime. Zero compromise.
 </p>
+
 <div class="contact">
 <a href="mailto:info@pinhead.systems">Inquire: info@pinhead.systems</a>
 </div>
+
 <footer>
 &copy; 2026 Pinhead Systems // Patent Pending
 </footer>
 </main>
+
 </body>
 </html>
